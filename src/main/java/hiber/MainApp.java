@@ -5,7 +5,6 @@ import hiber.model.Car;
 import hiber.model.User;
 import hiber.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 import java.sql.SQLException;
 import java.util.List;
 
@@ -36,7 +35,7 @@ public class MainApp {
 //        userService.add(user3);
 //        userService.add(user4);
 //
-//        List<User> users = userService.listUsers();
+//        List<User> users = userService.getListUsers();
 //        for (User user : users) {
 //            System.out.println("Id = " + user.getId());
 //            System.out.println("First Name = " + user.getFirstName());
@@ -45,7 +44,7 @@ public class MainApp {
 //            System.out.println();
 //        }
 
-        userService.getUserByModelAndSeries("Volkswagen Tiguan", 150);
+        userService.getUserByModelAndSeries("Volkswagen Tiguan", 151);
         context.close();
     }
 }
